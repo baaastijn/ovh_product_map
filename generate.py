@@ -5,7 +5,7 @@ import pandas as pd
 
 # Load the whole CSV file
 # Be sure the CSV file is delimited with ";"
-dataframe = pd.read_csv("data/products.csv", sep=';')
+dataframe = pd.read_csv("data/products.csv", sep=',')
 
 # Print in the CLI a small part of the CSV to check if the data is correctly loaded
 print(dataframe.head())

@@ -1,0 +1,16 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-{{ key }}" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">{{ item['name'] }}</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>{{ item['short_description'] }}</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">{{ item['universe_name'] }}</span>
+        <span class="badge bg-border-black">{{ item['phase_name'] }}</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="{{ item['url_product'] }}" class="link-primary">{{ item['url_product'] }}</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="{{ item['url_documentation'] }}" class="link-primary">{{ item['url_documentation'] }}</a></p>
+    </div>
+</div>

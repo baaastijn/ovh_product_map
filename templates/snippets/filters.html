@@ -1,0 +1,22 @@
+    <div class="container my-5 filters">
+        <div class="row rounded-3 border shadow-lg p-3">
+            <div class="col-xs-12 col-md-6">
+                <h3>Universe</h3>
+                <div class="btn-group" role="group" data-filter-group="universe" aria-label="Filters for universes">
+                    <button class="btn btn-outline-primary active" data-filter="*">All</button>
+                    {% for key, value in universes.iterrows() %}
+                    <button class="btn btn-outline-primary" data-filter=".{{ value['universe_label'] }}">{{ value['universe_name'] }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6" id="advanced-filters">
+                <h3>Product release phase</h3>
+                <div class="btn-group" role="group" data-filter-group="phase" aria-label="Filters for phase">
+                    <button class="btn btn-outline-primary active" data-filter="*">All</button>
+                    {% for key, value in phases.iterrows() %}
+                    <button class="btn btn-outline-primary" data-filter=".{{ value['phase_label'] }}">{{ value['phase_name'] }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+          </div>
+    </div>

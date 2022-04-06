@@ -1,0 +1,2339 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OVHcloud Product List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="custom.css">
+    </head>
+<body>
+
+<header class="p-3 text-white bg-ovh">
+<div class="container">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a class="navbar-brand" href="#">
+      <img src="img/OVHcloud_logo.webp" alt="" width="150" height="24">
+    </a>
+
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <li><a class="btn btn-outline-light m-2"  href="index.html">Product map</a></li>
+      <li><a class="btn btn-outline-light m-2"  href="product.list.html">Product list</a></li>
+      <li><a class="btn btn-link link-light m-2" data-bs-toggle="modal" data-bs-target="#about">About</a></li>
+    </ul>
+      
+  </div>
+</div>
+</header>
+    
+<!-- About Modal -->
+<div id="about" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="about-title" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="about-title">About this product map</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This website is a personal Proof of Concept to display OVHcloud products portfolio organization.</p>
+        <p>It's clearly inspired from GCP Developer Cheat Sheet.</p>
+        <p>Backend with Pandas and Jinja2, then Bootstrap and Masonry for the frontend.</p>
+        <p><a class="" href="https://github.com/baaastijn/ovh_product_map" target="blank">Github project page</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+    <div class="container mt-5">        
+        <div class="row">
+            <!-- Generate categories and product list -->
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-compute"><h1>Compute</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-1" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">Dedicated servers</h6>
+                                </div>
+                                <div class="description-list m-1">Physical and dedicated servers</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-1" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Dedicated servers</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Physical and dedicated servers</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/bare-metal/" class="link-primary">https://www.ovhcloud.com/fr/bare-metal/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-2" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">VPS</h6>
+                                </div>
+                                <div class="description-list m-1">Affordable virtual servers </div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-2" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">VPS</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Affordable virtual servers </h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/vps/" class="link-primary">https://www.ovhcloud.com/fr/vps/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-3" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">Managed Baremetal</h6>
+                                </div>
+                                <div class="description-list m-1">Managed hosts, bundled with VMWare software</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-3" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Managed Baremetal</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed hosts, bundled with VMWare software</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/managed-bare-metal/" class="link-primary">https://www.ovhcloud.com/fr/managed-bare-metal/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-4" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">HPC for Nutanix</h6>
+                                </div>
+                                <div class="description-list m-1">Preinstalled Nutanix clusters</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-4" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">HPC for Nutanix</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Preinstalled Nutanix clusters</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/" class="link-primary">https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-5" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">HPC for VMware</h6>
+                                </div>
+                                <div class="description-list m-1">Managed VMware cluster as a Service</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-5" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">HPC for VMware</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed VMware cluster as a Service</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/" class="link-primary">https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-6" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">HPC for Anthos</h6>
+                                </div>
+                                <div class="description-list m-1">Managed Anthos cluster as a Service</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-6" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">HPC for Anthos</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed Anthos cluster as a Service</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/" class="link-primary">https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-7" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">VM instances</h6>
+                                </div>
+                                <div class="description-list m-1">Virtual machines with Linux or Windows</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-7" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">VM instances</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Virtual machines with Linux or Windows</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/compute/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/compute/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-8" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">Kubernetes cluster</h6>
+                                </div>
+                                <div class="description-list m-1">Managed kubernetes clusters</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-8" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Kubernetes cluster</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed kubernetes clusters</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/kubernetes/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/kubernetes/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-9" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-compute m-1">Baremetal instances</h6>
+                                </div>
+                                <div class="description-list m-1">Baremetal servers with pay as you go</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-9" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Baremetal instances</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Baremetal servers with pay as you go</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">alpha</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="#" class="link-primary">#</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-storage"><h1>Storage</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-11" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Enterprise File Storage</h6>
+                                </div>
+                                <div class="description-list m-1">Managed NetApp Ontap file storage</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-11" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Enterprise File Storage</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed NetApp Ontap file storage</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/" class="link-primary">https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-12" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">NAS-HA</h6>
+                                </div>
+                                <div class="description-list m-1">Managed file storage</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-12" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">NAS-HA</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed file storage</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/nas/" class="link-primary">https://www.ovh.com/fr/nas/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-13" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Cloud Disk Array</h6>
+                                </div>
+                                <div class="description-list m-1">Managed Block Storage</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-13" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Cloud Disk Array</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed Block Storage</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/cloud-disk-array/" class="link-primary">https://www.ovh.com/fr/cloud-disk-array/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-14" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Veeam Enterprise</h6>
+                                </div>
+                                <div class="description-list m-1">Backup tools powered by VeeaM technology</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-14" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Veeam Enterprise</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Backup tools powered by VeeaM technology</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/" class="link-primary">https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-15" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Storage servers</h6>
+                                </div>
+                                <div class="description-list m-1">Dedicated Servers with lot of storage inside</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-15" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Storage servers</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Dedicated Servers with lot of storage inside</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/bare-metal/storage/" class="link-primary">https://www.ovhcloud.com/fr/bare-metal/storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-16" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Backup storage</h6>
+                                </div>
+                                <div class="description-list m-1">Backup space offered with Dedicated Servers</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-16" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Backup storage</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Backup space offered with Dedicated Servers</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/bare-metal/backup-storage/" class="link-primary">https://www.ovhcloud.com/fr/bare-metal/backup-storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-17" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Veeam for VMware</h6>
+                                </div>
+                                <div class="description-list m-1">Backup tool for VMware virtual machines</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-17" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Veeam for VMware</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Backup tool for VMware virtual machines</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/veeam-backup-managed/" class="link-primary">https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/veeam-backup-managed/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-18" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Zerto for VMware</h6>
+                                </div>
+                                <div class="description-list m-1">DRP tool for VMware</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-18" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Zerto for VMware</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>DRP tool for VMware</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/zerto/" class="link-primary">https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/zerto/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-19" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Object storage Swift</h6>
+                                </div>
+                                <div class="description-list m-1">Store data with Object storage Swift technology</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-19" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Object storage Swift</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Store data with Object storage Swift technology</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/object-storage/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/object-storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-20" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Object storage High Performance</h6>
+                                </div>
+                                <div class="description-list m-1">Store data with Object storage S3 technology</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-20" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Object storage High Performance</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Store data with Object storage S3 technology</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/object-storage/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/object-storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-21" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Block Storage</h6>
+                                </div>
+                                <div class="description-list m-1">Remote volumes of storage for your VMs</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-21" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Block Storage</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Remote volumes of storage for your VMs</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/block-storage/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/block-storage/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-22" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Cloud Archive</h6>
+                                </div>
+                                <div class="description-list m-1">Long-term cold storage to securely archive your data</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-22" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Cloud Archive</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Long-term cold storage to securely archive your data</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/cloud-archive/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/cloud-archive/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-23" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Instances backups</h6>
+                                </div>
+                                <div class="description-list m-1">Daily backups for your VMs</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-23" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Instances backups</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Daily backups for your VMs</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/instance-backup/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/instance-backup/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-24" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-storage m-1">Volume Snapshot</h6>
+                                </div>
+                                <div class="description-list m-1">Backups for your VM volumes</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-24" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Volume Snapshot</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Backups for your VM volumes</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/volume-snapshot/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/volume-snapshot/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-databases"><h1>Databases</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-26" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Public Cloud Relational Databases</h6>
+                                </div>
+                                <div class="description-list m-1">Managed MySQL and PostgreSQL</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-26" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Public Cloud Relational Databases</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed MySQL and PostgreSQL</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/databases/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/databases/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-27" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Public Cloud NoSQL Databases</h6>
+                                </div>
+                                <div class="description-list m-1">Managed Redis and MongoDB Databases</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-27" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Public Cloud NoSQL Databases</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed Redis and MongoDB Databases</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/databases/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/databases/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-28" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Public Cloud Logs Databases</h6>
+                                </div>
+                                <div class="description-list m-1">Managed OpenSearch </div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-28" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Public Cloud Logs Databases</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed OpenSearch </h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/databases/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/databases/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-29" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Start SQL</h6>
+                                </div>
+                                <div class="description-list m-1">Relational Databases for Web hosting offers, with shared resources</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-29" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Start SQL</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Relational Databases for Web hosting offers, with shared resources</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-hosting/options/" class="link-primary">https://www.ovhcloud.com/fr/web-hosting/options/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-30" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Private SQL</h6>
+                                </div>
+                                <div class="description-list m-1">Relational Databases for Web hosting offers, with dedicated resoruces</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-30" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Private SQL</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Relational Databases for Web hosting offers, with dedicated resoruces</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-hosting/options/private-sql/" class="link-primary">https://www.ovhcloud.com/fr/web-hosting/options/private-sql/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-31" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-databases m-1">Web Cloud Databases</h6>
+                                </div>
+                                <div class="description-list m-1">Affordable managed relational Databases for Web</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-31" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Web Cloud Databases</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Affordable managed relational Databases for Web</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/cloud-databases/" class="link-primary">https://www.ovh.com/fr/cloud-databases/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-analytics"><h1>Data Analytics</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-33" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-analytics m-1">Public Cloud Kafka</h6>
+                                </div>
+                                <div class="description-list m-1">Managed Kafka Clusters</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-33" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Public Cloud Kafka</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed Kafka Clusters</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/apache-kafka/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/apache-kafka/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-34" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-analytics m-1">Data Processing</h6>
+                                </div>
+                                <div class="description-list m-1">Apache Spark jobs as a Service</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-34" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Data Processing</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Apache Spark jobs as a Service</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/data-processing/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/data-processing/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-ai"><h1>AI & Machine Learning</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-36" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-ai m-1">AI Notebooks</h6>
+                                </div>
+                                <div class="description-list m-1">Managed Jupyter or VSCode notebooks</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-36" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">AI Notebooks</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed Jupyter or VSCode notebooks</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">beta</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/ai-notebook/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/ai-notebook/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-37" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-ai m-1">AI Training</h6>
+                                </div>
+                                <div class="description-list m-1">Train your models with CPU and GPU</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-37" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">AI Training</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Train your models with CPU and GPU</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/public-cloud/ai-training/" class="link-primary">https://www.ovhcloud.com/fr/public-cloud/ai-training/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-38" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-ai m-1">AI Apps</h6>
+                                </div>
+                                <div class="description-list m-1">Deploy your AI dockers with high availability</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-38" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">AI Apps</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Deploy your AI dockers with high availability</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">alpha</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="#" class="link-primary">#</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-network"><h1>Network & Connectivity</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-40" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">vRack</h6>
+                                </div>
+                                <div class="description-list m-1">a L2 private network</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-40" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">vRack</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>a L2 private network</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/solutions/vrack/" class="link-primary">https://www.ovh.com/fr/solutions/vrack/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-41" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">OVHcloud Connect</h6>
+                                </div>
+                                <div class="description-list m-1">Private interconnection to OVHcloud vRack</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-41" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">OVHcloud Connect</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Private interconnection to OVHcloud vRack</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/" class="link-primary">https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-42" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">NSX Edge Firewall</h6>
+                                </div>
+                                <div class="description-list m-1">Edge firewall for HPC VMware</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-42" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">NSX Edge Firewall</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Edge firewall for HPC VMware</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Private Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="nan" class="link-primary">nan</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="nan" class="link-primary">nan</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-43" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">Floating IPs</h6>
+                                </div>
+                                <div class="description-list m-1">Additionnal dynamic public IPs for your services</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-43" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Floating IPs</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Additionnal dynamic public IPs for your services</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">alpha</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="#" class="link-primary">#</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-44" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">Load Balancer (IPLB)</h6>
+                                </div>
+                                <div class="description-list m-1">Load balancer to balance traffic in the cloud</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-44" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Load Balancer (IPLB)</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Load balancer to balance traffic in the cloud</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/solutions/load-balancer/" class="link-primary">https://www.ovh.com/fr/solutions/load-balancer/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-45" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">Load Balancer aaS</h6>
+                                </div>
+                                <div class="description-list m-1">Load Balancer for Public Cloud, with pay as you go</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-45" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Load Balancer aaS</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Load Balancer for Public Cloud, with pay as you go</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Public Cloud</span>
+        <span class="badge bg-border-black">alpha</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="#" class="link-primary">#</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-46" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">IP Failover</h6>
+                                </div>
+                                <div class="description-list m-1">Additionnal dynamic public IPs for your services</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-46" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">IP Failover</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Additionnal dynamic public IPs for your services</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Baremetal Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/bare-metal/ip/" class="link-primary">https://www.ovhcloud.com/fr/bare-metal/ip/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-47" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">CDN Infrastructure</h6>
+                                </div>
+                                <div class="description-list m-1">Caching system in 3 POP</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-47" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">CDN Infrastructure</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Caching system in 3 POP</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovh.com/fr/cdn/infrastructure/" class="link-primary">https://www.ovh.com/fr/cdn/infrastructure/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-48" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-network m-1">CDN Web</h6>
+                                </div>
+                                <div class="description-list m-1">Caching system for OVHcloud Web plans</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-48" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">CDN Web</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Caching system for OVHcloud Web plans</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-hosting/options/cdn/" class="link-primary">https://www.ovhcloud.com/fr/web-hosting/options/cdn/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-hosting"><h1>Web Hosting</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-50" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-hosting m-1">Web hosting offers</h6>
+                                </div>
+                                <div class="description-list m-1">Multiple hosting plans</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-50" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Web hosting offers</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Multiple hosting plans</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-hosting/" class="link-primary">https://www.ovhcloud.com/fr/web-hosting/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-51" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-hosting m-1">Web PaaS</h6>
+                                </div>
+                                <div class="description-list m-1">Managed all in one platform powered by platform.sh</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-51" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Web PaaS</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Managed all in one platform powered by platform.sh</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-paas/" class="link-primary">https://www.ovhcloud.com/fr/web-paas/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-52" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-hosting m-1">Domain names</h6>
+                                </div>
+                                <div class="description-list m-1">More than 1000 domain names to register</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-52" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Domain names</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>More than 1000 domain names to register</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">General availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/domains/" class="link-primary">https://www.ovhcloud.com/fr/domains/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+                
+                <div class="col-xs-12 col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-collab"><h1>Collaborative Tools</h1></div>
+                        <div class="card-body">
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-54" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-collab m-1">Visibility Pro</h6>
+                                </div>
+                                <div class="description-list m-1">Tools to improve your natural SEO</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-54" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Visibility Pro</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Tools to improve your natural SEO</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/" class="link-primary">https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-55" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-collab m-1">Emails Solutions</h6>
+                                </div>
+                                <div class="description-list m-1">Range of business email services</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-55" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Emails Solutions</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Range of business email services</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/fr/emails/" class="link-primary">https://www.ovhcloud.com/fr/emails/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                            
+                            <button class="w-100 product-list align-items-flex d-flex p-1" data-bs-toggle="offcanvas" href="#offcanvas-56" role="button" aria-controls="offcanvasExample">
+                                <div class="me-auto">
+                                    <h6 class="product_name color-collab m-1">Collaborative Tools</h6>
+                                </div>
+                                <div class="description-list m-1">Microsoft 365 and Sharepoint as a Service</div>
+                            </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-56" aria-labelledby="Label">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Collaborative Tools</h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <hr>
+        <h5>Microsoft 365 and Sharepoint as a Service</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
+        <span class="badge bg-border-black">Web Cloud</span>
+        <span class="badge bg-border-black">Regional availability</span>
+        <hr>
+        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="https://www.ovhcloud.com/en-gb/collaborative-tools/" class="link-primary">https://www.ovhcloud.com/en-gb/collaborative-tools/</a></p>
+        <p><i class="bi bi-book"></i> Documentation : <a href="https://docs.ovh.com" class="link-primary">https://docs.ovh.com</a></p>
+    </div>
+</div>
+                             
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+            
+                 
+            
+                 
+            
+                 
+            
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+</body>
+</html>

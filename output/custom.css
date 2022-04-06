@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+}
+
+/* ==================================================== MAP TILES LAYOUT */
+
+.grid-item { 
+    filter: brightness(0.9);
+    height: 130px;
+    border: 2px solid #fff;
+    position: relative;
+
+}
+
+.category {
+    height: 260px;
+}
+
+
+.product:hover,
+.product:focus-within {
+    filter: brightness(1.1);
+}
+
+.product_name {
+    font-weight: 500;
+}
+
+
+.product_description {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.product_universe {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.product_more {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.product:hover .product_description,
+.product:focus-within .product_description,
+.product:hover .product_universe,
+.product:focus-within .product_universe,
+.product:hover .product_more,
+.product:focus-within .product_more {
+    opacity: 1;
+}
+
+/* ==================================================== LIST LAYOUT */
+
+
+.product-list {
+    transition-duration: 0.4s;
+    border: none;
+    background: transparent;
+}
+
+.product-list:hover {
+    border-radius: 4px;
+    background-color: #d2e2fc;
+}
+
+.description-list {
+    font-size: 12px;
+}
+
+.color-compute {
+    color: #0396FF;
+}
+
+.color-storage {
+    color: #f5c105;
+}
+
+.color-databases {
+    color: #28C76F;
+}
+
+.color-analytics {
+    color: #FA742B;
+}
+
+.color-ai {
+    color: #7367F0;
+}
+
+.color-network {
+    color: #EA5455;
+}
+
+.color-hosting {
+    color: #32CCBC;
+}
+
+.color-collab {
+    color: #9F44D3;
+}
+
+
+/* ==================================================== COLORS */
+/* https://webkul.github.io/coolhue/ */
+
+.bg-ovh {
+    background-color: #000e9c;
+}
+
+.bg-border-black {
+    color: #000;
+    border: 1px solid #000;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.bg-compute {
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    color: #000;
+}
+
+.bg-storage {
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    color: #000;
+}
+
+.bg-databases {
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    color: #000;
+}
+
+.bg-analytics {
+    background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+    color: #000;
+}
+
+.bg-ai {
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    color: #000;
+}
+
+.bg-network {
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    color: #000;
+}
+
+.bg-hosting {
+    background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+    color: #000;
+}
+
+.bg-collab {
+    background-image: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%);
+    color: #000;
+}

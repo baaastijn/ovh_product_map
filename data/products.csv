@@ -1,4 +1,4 @@
-﻿category_label,category_name,universe_label,universe_name,type,name,short_description,phase_label,phase_name,url_product,url_documentation
+category_label,category_name,universe_label,universe_name,type,name,short_description,phase_label,phase_name,url_product,url_documentation
 compute,,baremetal_cloud private_cloud public_cloud,,category,Compute,Servers Virtual Machines and Containers,,,,
 compute,Compute,baremetal_cloud,Baremetal Cloud,product,Dedicated servers,Physical and dedicated servers,general_avail,General availability,https://www.ovhcloud.com/fr/bare-metal/,https://docs.ovh.com
 compute,Compute,baremetal_cloud,Baremetal Cloud,product,VPS,Affordable virtual servers ,general_avail,General availability,https://www.ovhcloud.com/fr/vps/,https://docs.ovh.com

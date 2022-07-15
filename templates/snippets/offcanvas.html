@@ -1,16 +1,50 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-{{ key }}" aria-labelledby="Label">
     <div class="offcanvas-header">
-        <h4 class="offcanvas-title">{{ item['name'] }}</h4>
+        <h4 class="offcanvas-title">{{ product['product_name'] }}</h4>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
         <hr>
-        <h5>{{ item['short_description'] }}</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel lectus a leo viverra pulvinar ac eu nulla. Nunc ipsum lectus, mollis a enim at, pretium aliquam risus. Donec tempor commodo est, non mattis est hendrerit non. Vestibulum erat purus, rhoncus id felis non, suscipit pellentesque tortor...</p>
-        <span class="badge bg-border-black">{{ item['universe_name'] }}</span>
-        <span class="badge bg-border-black">{{ item['phase_name'] }}</span>
+        <h5>{{ product['product_short_description'] }}</h5>
+        {% for key, phase in phases.iterrows() %}
+            {% if phase['phase_label'] == product['phase_name'] %}
+            <span class="badge bg-border-black">{{ phase["phase_name"] }}</span>
+            {% endif %}
+        {% endfor %}
+
         <hr>
-        <p><i class="bi bi-box-arrow-up-right"></i> Website : <a href="{{ item['url_product'] }}" class="link-primary">{{ item['url_product'] }}</a></p>
-        <p><i class="bi bi-book"></i> Documentation : <a href="{{ item['url_documentation'] }}" class="link-primary">{{ item['url_documentation'] }}</a></p>
+        <p><i class="bi bi-box-arrow-up-right"></i>
+            <a href="{{ product['product_website_url'] }}" class="link-primary">OVHcloud Website</a>
+        </p>
+        <p><i class="bi bi-book"></i>
+            <a href="{{ product['product_documentation_url'] }}" class="link-primary">Official Documentation</a>
+        </p>
+        
+        <hr>
+        <h4>Technical details</h4>
+        <p><strong>Hardware tenancy :</strong> {{ product['hardware_tenancy'] }}</p>
+        <p><strong>Public Network availability :</strong> {{ product['public_network'] }}</p>
+        <p><strong>Private Network availability (vRack) :</strong> {{ product['private_network'] }}</p>
+        <p><strong>Code Automation (Infras as code) :</strong> {{ product['code_automation'] }}</p>
+        <p><strong>Datacenter availabilities :</strong></p>
+        <ul>
+            {% for key, dc in datacenters.iterrows() %}
+            {% set dcname = dc['datacenter_product_label'] %}
+            <li class="avail-{{ product[ dcname ] }}">{{ dc['datacenter_area'] }} / {{ dc['datacenter_country'] }} / {{ dc['datacenter_city'] }} : {{ product[ dcname ] }}</li>
+            {% endfor %}
+        </ul>
+        
+        
+        <hr>
+        <h4>Compliancy and certifications</h4>
+        <ul>
+            <li class="avail-{{ product['certif_iso_27001'] }}"><strong>ISO 27001 :</strong> {{ product['certif_iso_27001'] }}</li>
+            <li class="avail-{{ product['certif_hds'] }}"><strong>HDS :</strong> {{ product['certif_hds'] }}</li>
+            <li class=""><strong>HIPAA :</strong> missing info.</li>
+            <li class="avail-{{ product['certif_pci_dss'] }}"><strong>PCI-DSS :</strong> {{ product['certif_pci_dss'] }}</li>
+            <li class="avail-{{ product['certif_snc'] }}"><strong>SecNumCloud :</strong> {{ product['certif_snc'] }}</li>
+            <li class=""><strong>SOCx type I :</strong> missing info.</li>
+            <li class=""><strong>SOCx type II :</strong> missing info</li>
+        </ul>
     </div>
 </div>

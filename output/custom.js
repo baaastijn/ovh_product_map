@@ -17,8 +17,6 @@ var $grid = $('.grid').isotope({
     },
     getSortData: {
         name: '.product_name',
-        universe: '[data-universe]',
-        phase: '[data-phase]'
     },
     filter: function() {
         var $this = $(this);
@@ -39,6 +37,7 @@ $('.filters').on( 'click', '.btn', function() {
   buttonFilters[ filterGroup ] = $this.attr('data-filter');
   // combine filters
   buttonFilter = concatValues( buttonFilters );
+    console.log(buttonFilter);
   // Isotope arrange
   $grid.isotope();
 });
@@ -83,3 +82,20 @@ function debounce( fn, threshold ) {
     timeout = setTimeout( delayed, threshold );
   };
 }
+
+
+// Datatable for Raw product table
+$(document).ready( function () {
+    $('#product_raw_data').DataTable({
+    scrollX: true,
+    "pageLength": 200,
+    "select": true,
+    "autoWidth": true,
+    dom: 'Bfrtip',
+    buttons: [
+        'colvis','copy', 'csv'
+    ]
+});
+    $("td:contains('True')").addClass('bg-green');
+    $("td:contains('False')").addClass('bg-red');
+} );

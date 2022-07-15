@@ -1,0 +1,13 @@
+﻿datacenter_codename;datacenter_area;datacenter_country;datacenter_city;datacenter_css_label;datacenter_product_label
+GRA;Europe;France;Gravelines;dc-gra;datacenter_avail_gra
+RBX;Europe;France;Roubaix;dc-rbx;datacenter_avail_rbx
+SBG;Europe;France;Strasbourg;dc-sbg;datacenter_avail_sbg
+DE;Europe;Germany;Frankfurt;dc-fra;datacenter_avail_de
+WAW;Europe;Poland;Warsaw;dc-waw;datacenter_avail_waw
+UK;Europe;United Kingdom;London;dc-uk;datacenter_avail_uk
+SGP;Asia;Singapore;Singapore;dc-sgp;datacenter_avail_sgp
+SYD;Asia;Australia;Sydney;dc-syd;datacenter_avail_syd
+BHS;North America;Canada;Beauharnois;dc-bhs;datacenter_avail_bhs
+HIL;North America;USA;Hilsboro;dc-hil;datacenter_avail_hil
+VIN;North America;USA;VintHill;dc-vin;datacenter_avail_vin
+

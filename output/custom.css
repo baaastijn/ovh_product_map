@@ -9,7 +9,7 @@ body {
 /* ==================================================== MAP TILES LAYOUT */
 
 .grid-item { 
-    filter: brightness(0.9);
+    filter: brightness(1);
     height: 130px;
     border: 2px solid #fff;
     position: relative;
@@ -40,7 +40,7 @@ body {
     transition: opacity 300ms ease;
 }
 
-.product_universe {
+.product_phase {
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -60,11 +60,23 @@ body {
 
 .product:hover .product_description,
 .product:focus-within .product_description,
-.product:hover .product_universe,
-.product:focus-within .product_universe,
+.product:hover .product_phase,
+.product:focus-within .product_phase,
 .product:hover .product_more,
 .product:focus-within .product_more {
     opacity: 1;
+}
+
+.offcanvas {
+    font-size: 85%;
+}
+
+.avail-True {
+    color: green;
+}
+
+.avail-False {
+    color: red;
 }
 
 /* ==================================================== LIST LAYOUT */
@@ -78,7 +90,7 @@ body {
 
 .product-list:hover {
     border-radius: 4px;
-    background-color: #d2e2fc;
+    background-color: #f4f4f4 ;
 }
 
 .description-list {
@@ -86,40 +98,63 @@ body {
 }
 
 .color-compute {
-    color: #0396FF;
+    color: #76d7c4;
 }
 
 .color-storage {
-    color: #f5c105;
+    color: #f7dc6f;
+}
+
+.color-backup {
+    color: #ffc2f9;
 }
 
 .color-databases {
-    color: #28C76F;
+    color: #85c1e9;
 }
 
 .color-analytics {
-    color: #FA742B;
+    color: #f8c471;
 }
 
 .color-ai {
-    color: #7367F0;
+    color: #c39bd3;
 }
 
 .color-network {
-    color: #EA5455;
+    color: #9cccb2;
 }
 
 .color-hosting {
-    color: #32CCBC;
+    color: #f1948a;
 }
 
 .color-collab {
-    color: #9F44D3;
+    color: #82e0aa;
+}
+
+.color-gaming {
+    color: #f7cac9;
 }
 
 
+/* ==================================================== DATATABLES */
+
+.text-small {
+    font-size: 12px;
+}
+
+
+td.bg-green {
+    background-color: #bff5bc;
+}
+
+td.bg-red {
+    background-color: #f5bcc4;
+}
+
 /* ==================================================== COLORS */
-/* https://webkul.github.io/coolhue/ */
+/* https://htmlcolorcodes.com/fr/ */
 
 .bg-ovh {
     background-color: #000e9c;
@@ -133,41 +168,51 @@ body {
 }
 
 .bg-compute {
-    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    background-color: #76d7c4;
     color: #000;
 }
 
 .bg-storage {
-    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    background-color: #f7dc6f;
+    color: #000;
+}
+
+.bg-backup {
+    background-color: #dba4fc;
     color: #000;
 }
 
 .bg-databases {
-    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    background-color: #85c1e9;
     color: #000;
 }
 
 .bg-analytics {
-    background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+    background-color: #f8c471;
     color: #000;
 }
 
 .bg-ai {
-    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    background-color: #c39bd3;
     color: #000;
 }
 
 .bg-network {
-    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    background-color: #9cccb2;
     color: #000;
 }
 
 .bg-hosting {
-    background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+    background-color: #f1948a;
     color: #000;
 }
 
 .bg-collab {
-    background-image: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%);
+    background-color: #82e0aa;
+    color: #000;
+}
+
+.bg-gaming {
+    background-color: #f7cac9;
     color: #000;
 }

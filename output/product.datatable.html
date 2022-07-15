@@ -1,0 +1,2486 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>OVHcloud Product raw data table</title>
+        <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/fh-3.2.4/r-2.3.0/sb-1.3.4/sl-1.4.0/datatables.min.css"/>
+
+<link rel="stylesheet" href="custom.css">
+
+
+    </head>
+<body>
+
+<header class="p-3 text-white bg-ovh">
+<div class="container">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a class="navbar-brand" href="#">
+      <img src="img/OVHcloud_logo.webp" alt="" width="150" height="24">
+    </a>
+
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a class="btn btn-outline-light m-2"  href="index.html">Product map</a></li>
+        <li><a class="btn btn-outline-light m-2"  href="product.list.html">Product list</a></li>
+        <li><a class="btn btn-link link-light m-2" href="product.datatable.html">Raw data table</a></li>
+        <li><a class="btn btn-link link-light m-2" data-bs-toggle="modal" data-bs-target="#about">About</a></li>
+    </ul>
+      
+  </div>
+</div>
+</header>
+    
+<!-- About Modal -->
+<div id="about" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="about-title" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="about-title">About this product map</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This website is a personal Proof of Concept to display OVHcloud products portfolio organization.</p>
+        <p>It's clearly inspired from GCP Developer Cheat Sheet.</p>
+        <p>Backend with Pandas and Jinja2, then Bootstrap and Masonry for the frontend.</p>
+        <p><a class="" href="https://github.com/baaastijn/ovh_product_map" target="blank">Github project page</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+    <div class="container-fluid my-5">        
+        <div class="row rounded-3 border shadow-lg p-3 text-small">
+           <table border="1" class="dataframe table table-striped" id="product_raw_data">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>category_name</th>
+      <th>product_name</th>
+      <th>product_short_description</th>
+      <th>product_type</th>
+      <th>phase_name</th>
+      <th>visibility</th>
+      <th>product_website_url</th>
+      <th>product_documentation_url</th>
+      <th>public_network</th>
+      <th>private_network</th>
+      <th>code_automation</th>
+      <th>hardware_tenancy</th>
+      <th>order_possibility</th>
+      <th>billing_mode</th>
+      <th>datacenter_avail_bhs</th>
+      <th>datacenter_avail_gra</th>
+      <th>datacenter_avail_de</th>
+      <th>datacenter_avail_rbx</th>
+      <th>datacenter_avail_sbg</th>
+      <th>datacenter_avail_waw</th>
+      <th>datacenter_avail_uk</th>
+      <th>datacenter_avail_sgp</th>
+      <th>datacenter_avail_syd</th>
+      <th>datacenter_avail_hil</th>
+      <th>datacenter_avail_vin</th>
+      <th>certif_iso_27001</th>
+      <th>certif_hds</th>
+      <th>certif_hipaa</th>
+      <th>certif_pci_dss</th>
+      <th>certif_snc</th>
+      <th>certif_soc1</th>
+      <th>certif_soc2</th>
+      <th>universe_baremetal_cloud</th>
+      <th>universe_private_cloud</th>
+      <th>universe_public_cloud</th>
+      <th>universe_web_cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ai</td>
+      <td>AI Apps</td>
+      <td>Deploy your AI dockers app or models with high availability</td>
+      <td>paas</td>
+      <td>alpha</td>
+      <td>True</td>
+      <td>#</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/ai/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ai</td>
+      <td>AI Notebooks</td>
+      <td>Managed Jupyter or VSCode notebooks</td>
+      <td>paas</td>
+      <td>beta</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/ai-notebook/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/ai/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ai</td>
+      <td>AI Training</td>
+      <td>Train your models with CPU and GPU, as a service</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/ai-training/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/ai/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ai</td>
+      <td>ML Serving</td>
+      <td>Deploy you ML models files with high availability</td>
+      <td>paas</td>
+      <td>phase_out</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/machine-learning-serving/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/ai/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>analytics</td>
+      <td>Data Processing</td>
+      <td>Process you data at scale, powered with Apache Spark</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/data-processing/</td>
+      <td>https://docs.ovh.com/gb/en/data-processing/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>analytics</td>
+      <td>Public Cloud Grafana</td>
+      <td>build analytics and monitoring dashboards with managed Grafana</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/grafana/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>analytics</td>
+      <td>Public Cloud Kafka</td>
+      <td>Ingest data at scale with managed Apache Kafka clusters</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/apache-kafka/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>backup</td>
+      <td>Veeam Cloud Connect</td>
+      <td>Managed service too outsource Veeam back up from premise to the cloud</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/storage-solutions/veeam-cloud-connect/</td>
+      <td>https://docs.ovh.com/gb/en/storage/veeam-cloud-connect/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>backup</td>
+      <td>Veeam Enterprise for HPC VMware</td>
+      <td>Enterprise Plus Licence for the Veeam Backup&amp;Replication software</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/storage-solutions/veeam-enterprise/</td>
+      <td>https://docs.ovh.com/gb/en/storage/veeam-backup-replication/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>backup</td>
+      <td>Veeam Backup for HPC VMware</td>
+      <td>Managed Backup service for VMware virtual machines with Veeam</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/veeam-backup-managed/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>backup</td>
+      <td>Zerto DRP for HPC Vmware</td>
+      <td>Disaster Recovery solution for VMware infrastructure with Zerto</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/zerto/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>collab</td>
+      <td>Collaborative Tools</td>
+      <td>Microsoft 365 and Sharepoint as a Service</td>
+      <td>saas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-gb/collaborative-tools/</td>
+      <td>https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>collab</td>
+      <td>Emails Solutions</td>
+      <td>Range of business email services</td>
+      <td>saas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/emails/</td>
+      <td>https://docs.ovh.com/gb/en/emails-pro/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>collab</td>
+      <td>Visibility Pro</td>
+      <td>Tools to improve your natural SEO</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/</td>
+      <td>https://docs.ovh.com/fr/hosting/premiers-pas-avec-visibilite-pro/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>compute</td>
+      <td>Baremetal instances</td>
+      <td>Baremetal servers with pay as you go</td>
+      <td>iaas</td>
+      <td>beta</td>
+      <td>True</td>
+      <td>https://labs.ovh.com/bare-metal-on-public-cloud</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>compute</td>
+      <td>Dedicated servers</td>
+      <td>Physical and dedicated servers</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/bare-metal/</td>
+      <td>https://docs.ovh.com/gb/en/dedicated/</td>
+      <td>public_ipv4 public_ipv6</td>
+      <td>private_ipv4 private_ipv6</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>compute</td>
+      <td>Hosted Private Cloud for  VMware</td>
+      <td>Managed VMware cluster as a Service</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/managed-bare-metal/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>compute</td>
+      <td>Hosted Private Cloud for  Vmware HCI</td>
+      <td>Managed VMware cluster as a Service with local vSAN storage</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>compute</td>
+      <td>Hosted Private Cloud for Anthos</td>
+      <td>Google Anthos private clusters</td>
+      <td>caas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/hosted-private-cloud/anthos/</td>
+      <td>https://docs.ovh.com/gb/en/hosted-private-cloud-anthos/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>compute</td>
+      <td>Hosted Private Cloud for Nutanix</td>
+      <td>Preinstalled Nutanix clusters</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/</td>
+      <td>https://docs.ovh.com/gb/en/nutanix/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>compute</td>
+      <td>Hosted Private Cloud for SAP</td>
+      <td>Certified hardware to run SAP solutions</td>
+      <td>iaas</td>
+      <td>research_dev</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/lp/sap/</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>unavailable</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>compute</td>
+      <td>Managed Kubernetes Service</td>
+      <td>Managed Kubernetes clusters</td>
+      <td>caas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/kubernetes/</td>
+      <td>https://docs.ovh.com/gb/en/kubernetes/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>compute</td>
+      <td>VM instances</td>
+      <td>Virtual machines with Linux or Windows</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/compute/</td>
+      <td>https://docs.ovh.com/gb/en/public-cloud/</td>
+      <td>public_ipv4 public_ipv6</td>
+      <td>private_ipv4 private_ipv6</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>compute</td>
+      <td>VPS</td>
+      <td>Affordable virtual servers</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/vps/</td>
+      <td>https://docs.ovh.com/gb/en/vps/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>databases</td>
+      <td>Cloud DB</td>
+      <td>Affordable managed relational Databases for Web</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/cloud-databases/</td>
+      <td>https://docs.ovh.com/gb/en/clouddb/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>databases</td>
+      <td>Logs Data Platform</td>
+      <td>Managed and serverless logs data platform</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/logs-data-platform/</td>
+      <td>https://docs.ovh.com/gb/en/logs-data-platform/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>databases</td>
+      <td>Public Cloud Logs Databases</td>
+      <td>Managed OpenSearch cluster</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/databases/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>databases</td>
+      <td>Public Cloud Metrics Databases</td>
+      <td>Managed M3 clusters to host your metrics</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/m3db/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>databases</td>
+      <td>Public Cloud NoSQL Databases</td>
+      <td>Managed Cassandra, Redis and MongoDB Databases</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/databases/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>databases</td>
+      <td>Public Cloud Relational Databases</td>
+      <td>Managed MySQL and PostgreSQL Databases</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/databases/</td>
+      <td>https://docs.ovh.com/gb/en/publiccloud/databases/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>gaming</td>
+      <td>Bare Metal Gaming servers</td>
+      <td>Dedicated bare metal servers with gaming DDoS protection</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/bare-metal/storage/</td>
+      <td>https://docs.ovh.com/fr/dedicated/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>hosting</td>
+      <td>CDN Web</td>
+      <td>Caching system for OVHcloud Web plans</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/web-hosting/options/cdn/</td>
+      <td>https://docs.ovh.com/ie/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>hosting</td>
+      <td>Domain names</td>
+      <td>More than 1000 domain names to register</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/domains/</td>
+      <td>https://docs.ovh.com/ie/en/domains/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>hosting</td>
+      <td>Private SQL</td>
+      <td>Relational Databases for Web hosting offers with dedicated resources</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/</td>
+      <td>https://docs.ovh.com/gb/en/hosting/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>hosting</td>
+      <td>Start SQL database</td>
+      <td>Relational Databases for Web hosting offers with shared resources</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/</td>
+      <td>https://docs.ovh.com/gb/en/hosting/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>hosting</td>
+      <td>Web hosting offers</td>
+      <td>Multiple hosting plans</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/web-hosting/</td>
+      <td>https://docs.ovh.com/ie/en/hosting/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>hosting</td>
+      <td>Web PaaS</td>
+      <td>Managed all in one platform powered by platform.sh</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/web-paas/</td>
+      <td>https://docs.ovh.com/ie/en/web-paas/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>network</td>
+      <td>Bring Your Own IP</td>
+      <td>Import your own IP addresses to OVhcloud</td>
+      <td>paas</td>
+      <td>early_access</td>
+      <td>True</td>
+      <td>#</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>network</td>
+      <td>CDN Infrastructure</td>
+      <td>Caching system in 3 POP</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/cdn/infrastructure/</td>
+      <td>https://docs.ovh.com/gb/en/cdn-infrastructure/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>network</td>
+      <td>Public Cloud Floating Ips</td>
+      <td>Additionnal dynamic public IPs for your services</td>
+      <td>paas</td>
+      <td>beta</td>
+      <td>True</td>
+      <td>#</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>network</td>
+      <td>Public Cloud Network Gateway</td>
+      <td>Internet Gateway for Public Cloud Private Networks</td>
+      <td>paas</td>
+      <td>beta</td>
+      <td>True</td>
+      <td>#</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>network</td>
+      <td>IP Failover</td>
+      <td>Additionnal dynamic public IPs for your services</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/bare-metal/ip/</td>
+      <td>https://docs.ovh.com/fr/network-ip/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>network</td>
+      <td>Load Balancer (IPLB)</td>
+      <td>Load balancer to balance traffic in the cloud</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/solutions/load-balancer/</td>
+      <td>https://docs.ovh.com/fr/load-balancer/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>network</td>
+      <td>Public Cloud Load Balancers</td>
+      <td>Load Balancer for Public Cloud with pay as you go</td>
+      <td>paas</td>
+      <td>beta</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/load-balancer/</td>
+      <td>#</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>network</td>
+      <td>NSX Edge Firewall</td>
+      <td>Edge firewall for HPC VMware</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>network</td>
+      <td>OVHcloud Connect</td>
+      <td>Private interconnection to OVHcloud vRack</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/</td>
+      <td>https://docs.ovh.com/fr/ovhcloud-connect/</td>
+      <td>unavailable</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>network</td>
+      <td>vRack</td>
+      <td>a L2 private network</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/solutions/vrack/</td>
+      <td>https://docs.ovh.com/fr/network-ip/</td>
+      <td>unavailable</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>storage</td>
+      <td>Archive Cloud (Swift)</td>
+      <td>Object storage for warm storage to back-up your data</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/cloud-archive/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>storage</td>
+      <td>Archive Cold (S3)</td>
+      <td>Object storage for long-term cold storage to securely archive your data</td>
+      <td>paas</td>
+      <td>alpha</td>
+      <td>True</td>
+      <td>https://labs.ovh.com/cold-archive</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>storage</td>
+      <td>Bare Metal Storage servers</td>
+      <td>Dedicated bare metal servers with lot of storage inside</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/bare-metal/storage/</td>
+      <td>https://docs.ovh.com/fr/dedicated/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>storage</td>
+      <td>Block Storage</td>
+      <td>Remote volumes of storage for your VMs in Public Cloud</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/block-storage/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>storage</td>
+      <td>Managed Private Registry</td>
+      <td>Managed Harbor artifact registry</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en-ie/public-cloud/managed-private-registry/</td>
+      <td>https://docs.ovh.com/gb/en/private-registry/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>storage</td>
+      <td>File storage Cloud Disk Array</td>
+      <td>Managed Block Storage</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/cloud-disk-array/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>storage</td>
+      <td>File Storage Enterprise File Storage</td>
+      <td>Managed NetApp Ontap file storage</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>storage</td>
+      <td>File Storage NAS-HA</td>
+      <td>Managed file storage</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovh.com/fr/nas/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>False</td>
+      <td>single_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>prepaid</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>storage</td>
+      <td>Object Storage S3</td>
+      <td>Object storage based on S3 technology (high and standard Performance)</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/object-storage/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>storage</td>
+      <td>Object Storage Swift</td>
+      <td>Object storage based on Swift technology (standard perfromance)</td>
+      <td>paas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/fr/public-cloud/object-storage/</td>
+      <td>https://docs.ovh.com/fr/storage/</td>
+      <td>public_ipv4</td>
+      <td>unavailable</td>
+      <td>True</td>
+      <td>multi_tenant</td>
+      <td>worldwide_except_us</td>
+      <td>pay_go</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>storage</td>
+      <td>VMware vSAN</td>
+      <td>High perf. local storage in a managed VMware cluster</td>
+      <td>iaas</td>
+      <td>general_avail</td>
+      <td>True</td>
+      <td>https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/</td>
+      <td>https://docs.ovh.com/gb/en/private-cloud/</td>
+      <td>public_ipv4</td>
+      <td>private_ipv4</td>
+      <td>True</td>
+      <td>single_tenant</td>
+      <td>worldwide</td>
+      <td>prepaid</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/fh-3.2.4/r-2.3.0/sb-1.3.4/sl-1.4.0/datatables.min.js"></script>
+
+<script type="text/javascript" charset="utf8" crossorigin="anonymous">
+// Made with the lovely isotope.metafizzy.co/ (on top of Masonry)
+// external js: isotope.pkgd.js
+
+// store filter for each group
+var buttonFilters = {};
+var buttonFilter;
+// quick search regex
+var qsRegex;
+
+
+// init Isotope
+var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+        columnWidth: '.grid-sizer'
+    },
+    getSortData: {
+        name: '.product_name',
+    },
+    filter: function() {
+        var $this = $(this);
+        var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+        var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+        return searchResult && buttonResult;
+    }
+}
+);
+
+
+$('.filters').on( 'click', '.btn', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.btn-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  buttonFilters[ filterGroup ] = $this.attr('data-filter');
+  // combine filters
+  buttonFilter = concatValues( buttonFilters );
+    console.log(buttonFilter);
+  // Isotope arrange
+  $grid.isotope();
+});
+
+
+// change is-checked class on buttons
+$('.btn-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.active').removeClass('active');
+    $( this ).addClass('active');
+  });
+});
+
+// use value of search field to filter
+var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+  $grid.isotope();
+}) );
+
+
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+// debounce so filtering doesn't happen every millisecond
+function debounce( fn, threshold ) {
+  var timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout( timeout );
+    var args = arguments;
+    var _this = this;
+    function delayed() {
+      fn.apply( _this, args );
+    }
+    timeout = setTimeout( delayed, threshold );
+  };
+}
+
+
+
+$(document).ready( function () {
+    $('#product_raw_data').DataTable({
+    scrollX: true,
+    "pageLength": 200,
+    "select": true,
+    "autoWidth": true,
+    dom: 'Bfrtip',
+    buttons: [
+        'colvis','copy', 'csv'
+    ]
+});
+    $("td:contains('True')").addClass('bg-green');
+    $("td:contains('False')").addClass('bg-red');
+} );
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>OVHcloud Product raw data table</title>
+        {% include "snippets/header.html" %}
+    </head>
+<body>
+{% include "snippets/menu.withoutsearch.html" %}
+    
+{% include "snippets/about.html" %}
+
+<main>
+    <div class="container-fluid my-5">        
+        <div class="row rounded-3 border shadow-lg p-3 text-small">
+           {{ html_table }}
+        </div>
+    </div>
+</main>
+
+{% include "snippets/footer.html" %}
+</body>
+</html>
+

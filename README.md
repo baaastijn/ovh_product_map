@@ -6,7 +6,7 @@ Personal proof of concept, unrelated to our CX/UX Designers Teams. That's why it
 
 ## See in action
 
-Just go to https://baaastijn.github.io/portfolio/
+Just go to [https://www.product-map.ovh/](https://www.product-map.ovh/)
 
 ## Generate yourself
 

@@ -5,9 +5,8 @@ compute,Compute,baremetal_cloud,Baremetal Cloud,product,VPS,Affordable virtual s
 compute,Compute,baremetal_cloud,Baremetal Cloud,product,Managed Baremetal,Managed hosts bundled with VMWare software,general_avail,General availability,https://www.ovhcloud.com/fr/managed-bare-metal/,https://docs.ovh.com
 compute,Compute,private_cloud,Private Cloud,product,HPC for Nutanix,Preinstalled Nutanix clusters,regional_avail,Regional availability,https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/,https://docs.ovh.com
 compute,Compute,private_cloud,Private Cloud,product,HPC for VMware,Managed VMware cluster as a Service,general_avail,General availability,https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/,https://docs.ovh.com
-compute,Compute,private_cloud,Private Cloud,product,HPC for Anthos,Managed Anthos cluster as a Service,general_avail,General availability,https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/,https://docs.ovh.com
 compute,Compute,public_cloud,Public Cloud,product,VM instances,Virtual machines with Linux or Windows,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/compute/,https://docs.ovh.com
-compute,Compute,public_cloud,Public Cloud,product,Kubernetes cluster,Managed kubernetes clusters,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/kubernetes/,https://docs.ovh.com
+compute,Compute,public_cloud,Public Cloud,product,Managed Kubernetes Service,Managed Kubernetes clusters,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/kubernetes/,https://docs.ovh.com
 compute,Compute,public_cloud,Public Cloud,product,Baremetal instances,Baremetal servers with pay as you go,alpha,alpha,#,https://docs.ovh.com
 storage,,baremetal_cloud private_cloud public_cloud,,category,Storage,File Block and Object storage solutions,,,,
 storage,Storage & Backups,baremetal_cloud,Baremetal Cloud,product,Enterprise File Storage,Managed NetApp Ontap file storage,regional_avail,Regional availability,https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/,https://docs.ovh.com
@@ -24,6 +23,7 @@ storage,Storage & Backups,public_cloud,Public Cloud,product,Block Storage,Remote
 storage,Storage & Backups,public_cloud,Public Cloud,product,Cloud Archive,Long-term cold storage to securely archive your data,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/cloud-archive/,https://docs.ovh.com
 storage,Storage & Backups,public_cloud,Public Cloud,product,Instances backups,Daily backups for your VMs,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/instance-backup/,https://docs.ovh.com
 storage,Storage & Backups,public_cloud,Public Cloud,product,Volume Snapshot,Backups for your VM volumes,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/volume-snapshot/,https://docs.ovh.com
+storage,Storage & Backups,public_cloud,Public Cloud,product,Managed Private Registry,Managed Harbor to store container images and artifacts,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/managed-private-registry/,https://docs.ovh.com
 databases,,public_cloud web_cloud,,category,Databases,Databases solutions,,,,
 databases,Databases,public_cloud,Public Cloud,product,Public Cloud Relational Databases,Managed MySQL and PostgreSQL,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/databases/,https://docs.ovh.com
 databases,Databases,public_cloud,Public Cloud,product,Public Cloud NoSQL Databases,Managed Redis and MongoDB Databases,general_avail,General availability,https://www.ovhcloud.com/fr/public-cloud/databases/,https://docs.ovh.com

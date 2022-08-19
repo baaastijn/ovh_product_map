@@ -1,4 +1,4 @@
 ﻿model_label;model_css_label;model_name;model_short_description
-IaaS;iaas;Infrastructure as a service;Set of raw IT resources (compute, storage) giving you a lot of flexibility, but involve that you build the services
+IaaS;iaas;Infrastructure as a service;Set of raw IT resources (compute, storage, network) giving you a lot of flexibility, but involve that you build the services
 PaaS;paas;platform as a service;Managed and specialized cloud services, requiring less time to set up.
 SaaS;saas;software a a service;Managed software solutions where you never touch t the subjacent infrastructure.

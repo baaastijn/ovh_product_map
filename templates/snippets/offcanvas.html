@@ -26,7 +26,7 @@
         <p><strong>Public Network availability :</strong> {{ product['public_network'] }}</p>
         <p><strong>Private Network availability (vRack) :</strong> {{ product['private_network'] }}</p>
         <p><strong>Code Automation (Infras as code) :</strong> {{ product['code_automation'] }}</p>
-        <p><strong>Datacenter availabilities :</strong></p>
+        <p><strong>Proposed datacenters :</strong></p>
         <ul>
             {% for key, dc in datacenters.iterrows() %}
             {% set dcname = dc['datacenter_product_label'] %}

@@ -13,6 +13,9 @@ df_datacenters = pd.read_csv("csv_data/datacenter.list.csv", sep=';')
 df_categories = pd.read_csv("csv_data/category.list.csv", sep=';')
 df_products = pd.read_csv("csv_data/product.list.csv", sep=';')
 
+# Keep online lines where visibility column is true
+df_products = df_products[df_products.visibility == True]
+
 # Print in the CLI a small part of the CSV to check if the data is correctly loaded
 print(df_products.head())
 

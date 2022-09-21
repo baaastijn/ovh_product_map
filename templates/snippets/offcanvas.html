@@ -37,14 +37,15 @@
         
         <hr>
         <h4>Compliancy and certifications</h4>
+        <p>Caution, these informations are experimental so far.</p>
         <ul>
             <li class="avail-{{ product['certif_iso_27001'] }}"><strong>ISO 27001 :</strong> {{ product['certif_iso_27001'] }}</li>
             <li class="avail-{{ product['certif_hds'] }}"><strong>HDS :</strong> {{ product['certif_hds'] }}</li>
-            <li class=""><strong>HIPAA :</strong> missing info.</li>
+            <li class="avail-{{ product['certif_hipaa'] }}"><strong>HIPAA :</strong> {{ product['certif_hipaa'] }}</li>
             <li class="avail-{{ product['certif_pci_dss'] }}"><strong>PCI-DSS :</strong> {{ product['certif_pci_dss'] }}</li>
             <li class="avail-{{ product['certif_snc'] }}"><strong>SecNumCloud :</strong> {{ product['certif_snc'] }}</li>
-            <li class=""><strong>SOCx type I :</strong> missing info.</li>
-            <li class=""><strong>SOCx type II :</strong> missing info</li>
+            <li class="avail-{{ product['certif_soc1'] }}"><strong>SOCx type I :</strong> {{ product['certif_soc1'] }}.</li>
+            <li class="avail-{{ product['certif_soc2'] }}"><strong>SOCx type II :</strong> {{ product['certif_soc2'] }}</li>
         </ul>
     </div>
 </div>

@@ -8,6 +8,10 @@ Personal proof of concept, unrelated to our CX/UX Designers Teams. That's why it
 
 Just go to [https://www.product-map.ovh/](https://www.product-map.ovh/)
 
+## Request a modification on a product information
+
+Please create a pull request directly on this repository, thanks !
+
 ## Generate yourself
 
 Download the code, install requirements (Jinja2 and Pandas only) then run Python code **generate.py**.

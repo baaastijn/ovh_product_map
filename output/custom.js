@@ -1,88 +1,51 @@
-// Made with the lovely isotope.metafizzy.co/ (on top of Masonry)
-// external js: isotope.pkgd.js
+$(document).ready(function(){
+    // Searche Engine
+    $("#search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".card").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
 
-// store filter for each group
-var buttonFilters = {};
-var buttonFilter;
-// quick search regex
-var qsRegex;
+    // Button groups filtering
+    $('.btn-group').on('click', '.btn', function() {
+        // when clickin on a button group, change the active CSS class
+        $(this).addClass('active').siblings().removeClass('active');
 
+        var $stats = $('.active');
+        var $items = $('.product');
+ 
+        $items.show().removeClass("greyed-out border-greyed-out").addClass("border-ovh");
+ 
+        
+        if ($stats.length == 0){
+            return;
+        }
+        
+        // for each active item, will get his ID value (for example, iaas or pay_go)
+        var $vstats = $.map($stats, function(o) {return $(o).data('id'); });
+        $vstats = $vstats.filter(item => item);
+        
+        // for each button group
+        $stats.each(function() {
+            
+            // store the button group
+            var $stat = $(this);
 
-// init Isotope
-var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-        columnWidth: '.grid-sizer'
-    },
-    getSortData: {
-        name: '.product_name',
-    },
-    filter: function() {
-        var $this = $(this);
-        var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
-        var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
-        return searchResult && buttonResult;
-    }
-}
-);
+            // for each product item (Card in CSS), we will filter them
+            $items.filter(function() {
+                // if the active fitler is on "all" then we don't filter
+                if ($($stat).data('id') === "all") {
+                    return;
+                }
+                
+                // indexOf() will return -1 if not found, or the index position if found
+                return $vstats.indexOf($(this).data($stat.data('type'))) < 0;
+            }).addClass("greyed-out border-greyed-out").removeClass("border-ovh");
+        })
 
-
-$('.filters').on( 'click', '.btn', function() {
-  var $this = $(this);
-  // get group key
-  var $buttonGroup = $this.parents('.btn-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  buttonFilters[ filterGroup ] = $this.attr('data-filter');
-  // combine filters
-  buttonFilter = concatValues( buttonFilters );
-    console.log(buttonFilter);
-  // Isotope arrange
-  $grid.isotope();
-});
-
-
-// change is-checked class on buttons
-$('.btn-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.active').removeClass('active');
-    $( this ).addClass('active');
+      });
   });
-});
-
-// use value of search field to filter
-var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-  $grid.isotope();
-}) );
-
-
-// flatten object by concatting values
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
-  }
-  return value;
-}
-
-// debounce so filtering doesn't happen every millisecond
-function debounce( fn, threshold ) {
-  var timeout;
-  threshold = threshold || 100;
-  return function debounced() {
-    clearTimeout( timeout );
-    var args = arguments;
-    var _this = this;
-    function delayed() {
-      fn.apply( _this, args );
-    }
-    timeout = setTimeout( delayed, threshold );
-  };
-}
-
 
 // Datatable for Raw product table
 $(document).ready( function () {
@@ -99,3 +62,5 @@ $(document).ready( function () {
     $("td:contains('True')").addClass('bg-green');
     $("td:contains('False')").addClass('bg-red');
 } );
+
+

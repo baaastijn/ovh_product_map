@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-{{ key }}" aria-labelledby="Label">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-{{ key }}" aria-labelledby="Label">
     <div class="offcanvas-header">
         <h4 class="offcanvas-title">{{ product['product_name'] }}</h4>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -8,16 +8,17 @@
         <h5>{{ product['product_short_description'] }}</h5>
         {% for key, phase in phases.iterrows() %}
             {% if phase['phase_label'] == product['phase_name'] %}
-            <span class="badge bg-border-black">{{ phase["phase_name"] }}</span>
+            <h5><span class="badge bg-primary">{{ phase["phase_name"] }}</span></h5>
             {% endif %}
         {% endfor %}
-
         <hr>
-        <p><i class="bi bi-box-arrow-up-right"></i>
+        <p> 
+            <i class="bi bi-box-arrow-up-right"></i> 
             <a href="{{ product['product_website_url'] }}" class="link-primary">OVHcloud Website</a>
         </p>
-        <p><i class="bi bi-book"></i>
-            <a href="{{ product['product_documentation_url'] }}" class="link-primary">Official Documentation</a>
+        <p>
+            <i class="bi bi-book"></i> 
+            <a href="{{ product['product_documentation_url'] }}" class="link-primary">Official Documentation</a> 
         </p>
         
         <hr>
@@ -26,11 +27,11 @@
         <p><strong>Public Network availability :</strong> {{ product['public_network'] }}</p>
         <p><strong>Private Network availability (vRack) :</strong> {{ product['private_network'] }}</p>
         <p><strong>Code Automation (Infras as code) :</strong> {{ product['code_automation'] }}</p>
-        <p><strong>Proposed datacenters :</strong></p>
+        <p><strong>Proposed locations :</strong></p>
         <ul>
             {% for key, dc in datacenters.iterrows() %}
             {% set dcname = dc['datacenter_product_label'] %}
-            <li class="avail-{{ product[ dcname ] }}">{{ dc['datacenter_area'] }} / {{ dc['datacenter_country'] }} / {{ dc['datacenter_city'] }} : {{ product[ dcname ] }}</li>
+            <li>{{ dc['datacenter_area'] }} / {{ dc['datacenter_country'] }} / {{ dc['datacenter_city'] }} : <span class="avail-{{ product[ dcname ] }}">{{ product[ dcname ] }}</span></li>
             {% endfor %}
         </ul>
         
@@ -39,13 +40,13 @@
         <h4>Compliancy and certifications</h4>
         <p>Caution, these informations are experimental so far.</p>
         <ul>
-            <li class="avail-{{ product['certif_iso_27001'] }}"><strong>ISO 27001 :</strong> {{ product['certif_iso_27001'] }}</li>
-            <li class="avail-{{ product['certif_hds'] }}"><strong>HDS :</strong> {{ product['certif_hds'] }}</li>
-            <li class="avail-{{ product['certif_hipaa'] }}"><strong>HIPAA :</strong> {{ product['certif_hipaa'] }}</li>
-            <li class="avail-{{ product['certif_pci_dss'] }}"><strong>PCI-DSS :</strong> {{ product['certif_pci_dss'] }}</li>
-            <li class="avail-{{ product['certif_snc'] }}"><strong>SecNumCloud :</strong> {{ product['certif_snc'] }}</li>
-            <li class="avail-{{ product['certif_soc1'] }}"><strong>SOCx type I :</strong> {{ product['certif_soc1'] }}.</li>
-            <li class="avail-{{ product['certif_soc2'] }}"><strong>SOCx type II :</strong> {{ product['certif_soc2'] }}</li>
+            <li><strong>ISO 27001 :</strong> <span class="avail-{{ product['certif_iso_27001'] }}">{{ product['certif_iso_27001'] }}</span></li>
+            <li><strong>HDS :</strong> <span class="avail-{{ product['certif_hds'] }}">{{ product['certif_hds'] }}</span></li>
+            <li><strong>HIPAA :</strong> <span class="avail-{{ product['certif_hipaa'] }}">{{ product['certif_hipaa'] }}</span></li>
+            <li><strong>PCI-DSS :</strong> <span class="avail-{{ product['certif_pci_dss'] }}">{{ product['certif_pci_dss'] }}</span></li>
+            <li><strong>SecNumCloud :</strong> <span class="avail-{{ product['certif_snc'] }}">{{ product['certif_snc'] }}</span></li>
+            <li><strong>SOCx type I :</strong> <span class="avail-{{ product['certif_soc1'] }}">{{ product['certif_soc1'] }}</span></li>
+            <li><strong>SOCx type II :</strong> <span class="avail-{{ product['certif_soc2'] }}">{{ product['certif_soc2'] }}</span></li>
         </ul>
     </div>
 </div>

@@ -3,147 +3,101 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #000;
+    color: #00185e;
+    min-height: 100vh;
 }
 
-/* ==================================================== MAP TILES LAYOUT */
+/* ==================================================== GLOBAL LAYOUT */ 
 
-.grid-item { 
-    filter: brightness(1);
-    height: 130px;
-    border: 2px solid #fff;
+.font-bold {
+    font-weight: 700;
+}
+
+/* ==================================================== LEFT MENU LAYOUT */ 
+
+.list-group-item.active {
+    color: #00185e;
+    background-color: #f5feff;
+    border-bottom-color: #85d9fd;
+    border-top: none;
+  }
+
+  .list-group-item:hover {
+    color: #00185e;
+    background-color: #f5feff;
+    border-bottom-color: #85d9fd;
+    border-top: none;
+  }
+
+/* ==================================================== CARDS LAYOUT */
+
+.card-ovh:hover {
+    background-color: #f5feff;
+}
+
+.card-description {
+    color: #4d5592;
+}
+
+.card-link {
+    display: inline-block;
     position: relative;
-
-}
-
-.category {
-    height: 260px;
-}
-
-
-.product:hover,
-.product:focus-within {
-    filter: brightness(1.1);
-}
-
-.product_name {
-    font-weight: 500;
-}
-
-
-.product_description {
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: 1px solid;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 300ms ease;
-}
-
-.product_phase {
+    color: #0050d7;
+    text-decoration: none;
+  }
+  
+  .card-link:after {
+    content: '';
     position: absolute;
-    left: 10px;
-    bottom: 10px;
-    font-size: 10px;
-    opacity: 0;
-    transition: opacity 300ms ease;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0050d7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* ==================================================== GREYED OUT CARDS LAYOUT */
+
+.greyed-out {
+    background-color: #ddd;
+    opacity: .6;
 }
 
-.product_more {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 10px;
-    opacity: 0;
-    transition: opacity 300ms ease;
+.greyed-out:hover {
+    background-color: #ddd;
 }
 
-.product:hover .product_description,
-.product:focus-within .product_description,
-.product:hover .product_phase,
-.product:focus-within .product_phase,
-.product:hover .product_more,
-.product:focus-within .product_more {
-    opacity: 1;
-}
-
-.offcanvas {
-    font-size: 85%;
-}
+/* ==================================================== OFFCANVAS */
 
 .avail-True {
-    color: green;
+    color: #3c9119;
+    background: #dbf2bb;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .avail-False {
-    color: red;
+    color: #c11b1b;
+    background: #ffd2dd;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
-
-/* ==================================================== LIST LAYOUT */
-
-
-.product-list {
-    transition-duration: 0.4s;
-    border: none;
-    background: transparent;
-}
-
-.product-list:hover {
-    border-radius: 4px;
-    background-color: #f4f4f4 ;
-}
-
-.description-list {
-    font-size: 12px;
-}
-
-.color-compute {
-    color: #76d7c4;
-}
-
-.color-storage {
-    color: #f7dc6f;
-}
-
-.color-backup {
-    color: #ffc2f9;
-}
-
-.color-databases {
-    color: #85c1e9;
-}
-
-.color-analytics {
-    color: #f8c471;
-}
-
-.color-ai {
-    color: #c39bd3;
-}
-
-.color-network {
-    color: #9cccb2;
-}
-
-.color-hosting {
-    color: #f1948a;
-}
-
-.color-collab {
-    color: #82e0aa;
-}
-
-.color-gaming {
-    color: #f7cac9;
-}
-
 
 /* ==================================================== DATATABLES */
 
 .text-small {
     font-size: 12px;
 }
-
 
 td.bg-green {
     background-color: #bff5bc;
@@ -154,65 +108,21 @@ td.bg-red {
 }
 
 /* ==================================================== COLORS */
-/* https://htmlcolorcodes.com/fr/ */
+
+.border-ovh {
+    border-color: #85d9fd;
+    border-width: 2px;
+}
+
+.border-greyed-out {
+    border-color: #bbb;
+    border-width: 2px;
+}
 
 .bg-ovh {
     background-color: #000e9c;
 }
 
-.bg-border-black {
-    color: #000;
-    border: 1px solid #000;
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.bg-compute {
-    background-color: #76d7c4;
-    color: #000;
-}
-
-.bg-storage {
-    background-color: #f7dc6f;
-    color: #000;
-}
-
-.bg-backup {
-    background-color: #dba4fc;
-    color: #000;
-}
-
-.bg-databases {
-    background-color: #85c1e9;
-    color: #000;
-}
-
-.bg-analytics {
-    background-color: #f8c471;
-    color: #000;
-}
-
-.bg-ai {
-    background-color: #c39bd3;
-    color: #000;
-}
-
-.bg-network {
-    background-color: #9cccb2;
-    color: #000;
-}
-
-.bg-hosting {
-    background-color: #f1948a;
-    color: #000;
-}
-
-.bg-collab {
-    background-color: #82e0aa;
-    color: #000;
-}
-
-.bg-gaming {
-    background-color: #f7cac9;
-    color: #000;
+.title-ovh {
+    color: #dfff81;
 }

@@ -1,11 +1,11 @@
 ﻿category_label;category_name;category_short_description;category_css_label
-compute;Compute;Servers Virtual Machines and Containers;baremetal_cloud private_cloud public_cloud
-storage;Storage;File, Block and Object storage solutions;baremetal_cloud private_cloud public_cloud
-backup;Backup and Disaster Recovery;Backup solutions and disaster recovery tools;baremetal_cloud private_cloud public_cloud
-databases;Databases;Databases solutions;public_cloud web_cloud
-analytics;Data Analytics;Explore your data at scale;public_cloud
 ai;AI & Machine Learning;Create and use ML models and applications;public_cloud
-network;Network & Connectivity;Network related products;baremetal_cloud private_cloud public_cloud web_cloud
-hosting;Web Hosting;Host websites and web applications;web_cloud
+analytics;Data Analytics;Explore your data at scale;public_cloud
+backup;Backup and Disaster Recovery;Backup solutions and disaster recovery tools;baremetal_cloud private_cloud public_cloud
 collab;Collaborative Tools;Managed tools to improve your business office work;web_cloud
+compute;Compute;Servers Virtual Machines and Containers;baremetal_cloud private_cloud public_cloud
+databases;Databases;Databases solutions;public_cloud web_cloud
 gaming;Gaming solutions;Specific services for gaming industry;baremetal_cloud
+hosting;Web Hosting;Host websites and web applications;web_cloud
+network;Network & Connectivity;Network related products;baremetal_cloud private_cloud public_cloud web_cloud
+storage;Storage;File, Block and Object storage solutions;baremetal_cloud private_cloud public_cloud

@@ -1,53 +1,63 @@
-    <div class="container my-5 filters">
-        <div class="row rounded-3 border shadow-lg p-3">
-            <h3>Filter our product map</h3>
-            
-            <div class="col-xs-12 my-1">
-                <div class="btn-group btn-group-sm" role="group" data-filter-group="servicemodels" aria-label="Filters for service models">
-                   <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Service model : </a>
-                    <button class="btn btn-outline-primary active" data-filter="">All</button>
-                    {% for key, value in models.iterrows() %}
-                    <button class="btn btn-outline-primary" data-filter=".{{ value['model_css_label'] }}">{{ value['model_label'] }}</button>
-                    {% endfor %}
-                </div>
-            </div>
-            
-            <div class="col-xs-12 my-1">
-                <div class="btn-group btn-group-sm" role="group" data-filter-group="billing" aria-label="Filters for billing">
-                    <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Billing mode : </a>
-                    <button class="btn btn-outline-primary active" data-filter="">All</button>
-                    <button class="btn btn-outline-primary" data-filter=".prepaid">Prepaid</button>
-                    <button class="btn btn-outline-primary" data-filter=".pay_go">Pay as you go</button>
-                </div>
-            </div>
-            
-            <div class="col-xs-12 my-1">
-                <div class="btn-group btn-group-sm" role="group" data-filter-group="tenancy" aria-label="Filters for tenancy">
-                    <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Hardware tenancy model : </a>
-                    <button class="btn btn-outline-primary active" data-filter="">All</button>
-                    <button class="btn btn-outline-primary" data-filter=".single_tenant">Single-tenant</button>
-                    <button class="btn btn-outline-primary" data-filter=".multi_tenant">Multi-tenant</button>
-                </div>
-            </div>
-            
-            <div class="col-xs-12 my-1">
-                <div class="btn-group btn-group-sm" role="group" data-filter-group="tenancy" aria-label="Filters for tenancy">
-                    <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Network : </a>
-                    <button class="btn btn-outline-primary active" data-filter="">No filter</button>
-                    <button class="btn btn-outline-primary" data-filter=".public_ipv4">Public network</button>
-                    <button class="btn btn-outline-primary" data-filter=".private_ipv4">Private network (vRack)</button>
-                </div>
-            </div>            
+<h4 class="pt-3">Browse OVHcloud products and services:</h4>
 
-            
-            <div class="col-xs-12 my-1">
-                <div class="btn-group btn-group-sm" role="group" data-filter-group="phase" aria-label="Filters for phase">
-                    <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Product phase : </a>
-                    <button class="btn btn-outline-primary active" data-filter="">All</button>
-                    {% for key, value in phases.iterrows() %}
-                    <button class="btn btn-outline-primary" data-filter=".{{ value['phase_label'] }}">{{ value['phase_name'] }}</button>
-                    {% endfor %}
-                </div>
+<div class="d-flex flex-wrap align-items-center justify-content-between">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#filters" aria-expanded="false" aria-controls="collapseExample">
+        Filters <i class="bi bi-chevron-down"></i>
+    </button>
+    <form class="">
+        <input type="search" class="form-control form-control-dark quicksearch" id="search" placeholder="Search product..." aria-label="Search">
+    </form>
+</div>
+
+
+  <div class="collapse m-3" id="filters">
+    <div class="row card p-2">
+        
+        <div class="col-xs-12 my-1">
+            <div class="btn-group btn-group-sm">
+               <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Service model : </a>
+                <button class="btn btn-outline-primary stat model active" data-id="all" data-type="model">All</button>
+                {% for key, value in models.iterrows() %}
+                <button class="btn btn-outline-primary stat model" data-id="{{ value['model_css_label'] }}" data-type="model" >{{ value['model_label'] }}</button>
+                {% endfor %}
             </div>
-          </div>
-    </div>
+        </div>
+        
+        <div class="col-xs-12 my-1">
+            <div class="btn-group btn-group-sm" role="group" data-filter-group="billing" aria-label="Filters for billing">
+                <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Billing mode : </a>
+                <button class="btn btn-outline-primary stat billing active" data-id="all" data-type="billing">All</button>
+                <button class="btn btn-outline-primary stat billing" data-id="prepaid" data-type="billing">Prepaid</button>
+                <button class="btn btn-outline-primary stat billing" data-id="pay_go" data-type="billing">Pay as you go</button>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 my-1">
+            <div class="btn-group btn-group-sm" role="group" data-filter-group="tenancy" aria-label="Filters for tenancy">
+                <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Hardware tenancy model : </a>
+                <button class="btn btn-outline-primary stat tenancy active" data-id="all" data-type="tenancy">All</button>
+                <button class="btn btn-outline-primary stat tenancy" data-id="single_tenant" data-type="tenancy">Single-tenant</button>
+                <button class="btn btn-outline-primary stat tenancy" data-id="multi_tenant" data-type="tenancy">Multi-tenant</button>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 my-1">
+            <div class="btn-group btn-group-sm" role="group" data-filter-group="network" aria-label="Filters for network">
+                <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Network : </a>
+                <button class="btn btn-outline-primary stat network active" data-id="all" data-type="network">No filter</button>
+                <button class="btn btn-outline-primary stat network" data-id="public_ipv4" data-type="network">Public network</button>
+                <button class="btn btn-outline-primary stat network" data-id="private_ipv4" data-type="network">Private network (vRack)</button>
+            </div>
+        </div>            
+
+        <div class="col-xs-12 my-1">
+            <div class="btn-group btn-group-sm" role="group" data-filter-group="phase" aria-label="Filters for phase">
+                <a href="#" role="button" class="btn btn-default btn-outline-dark disabled" aria-disabled="true">Product phase : </a>
+                <button class="btn btn-outline-primary stat phase active" data-id="all" data-type="phase">All</button>
+                {% for key, value in phases.iterrows() %}
+                <button class="btn btn-outline-primary  stat phase" data-id="{{ value['phase_label'] }}" data-type="phase">{{ value['phase_name'] }}</button>
+                {% endfor %}
+            </div>
+        </div>
+      </div>
+  </div>

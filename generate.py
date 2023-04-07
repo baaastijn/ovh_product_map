@@ -19,14 +19,12 @@ df_products = df_products[df_products.visibility == True]
 # Print in the CLI a small part of the CSV to check if the data is correctly loaded
 print(df_products.head())
 
-
 # ----------------------------- CSV to HTML for Datatables
 # Datatables is a javascipt plugin for HTML table : https://datatables.net/ 
 
 # Using Pandas function to_html() to convert the CSV dataframe into HTML
-# WE add CSS class to get Bootstrap CSS support (striped rows)
+# We add CSS class to get Bootstrap CSS support (striped rows)
 df_html_table = df_products.to_html(table_id="product_raw_data", classes="table table-striped")
-
 
 # ----------------------------- HTML Rendering
 # Load the template
@@ -42,24 +40,12 @@ output = template.render(products=df_products, categories=df_categories, phases=
 # Write HTML output
 with open("output/index.html", "w") as fh:
     fh.write(output)
-    
-    
-# Rendering 2 : the product list
-template = env.get_template('template.product.list.html')
 
-# Render the HTML file
-output = template.render(products=df_products, categories=df_categories, phases=df_phases, datacenters=df_datacenters)
-
-# Write HTML output
-with open("output/product.list.html", "w") as fh:
-    fh.write(output)
-    
-# Rendering 3 : the product list   
+# Rendering 2 : the product datatable
 template = env.get_template('template.product.datatable.html')
 
 # render the HTML file
 output = template.render(html_table=df_html_table)
-
 
 # Write HTML output
 with open("output/product.datatable.html", "w") as fh:

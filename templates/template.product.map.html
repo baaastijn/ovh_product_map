@@ -1,59 +1,59 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>OVHcloud Product List</title>
+        <title>OVHcloud Products and services</title>
         {% include "snippets/header.html" %}
     </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#list-ovh" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 {% include "snippets/menu.html" %}
-    
 {% include "snippets/about.html" %}
-
 <main>
-    {% include "snippets/filters.html" %}
-
-    <div class="b-example-divider"></div>
-    
-    <div class="container">        
-        <div class="grid">
-            <!-- add sizing element for columnWidth -->
-            <div class="grid-sizer col-xs-12 col-sm-4 col-md-2"></div>
-            <!-- Generate universe and product tiles -->
-            {% for key, cat in categories.iterrows() %}
-                <div class="grid-item col-xs-12 col-sm-8 col-md-4 p-2 m-auto category {{ cat['category_css_label'] }} bg-{{ cat['category_label'] }}">
-                    <h1>{{ cat['category_name'] }}</h1>
-                    <p>{{ cat['category_short_description'] }}</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sticky-top" >
+                    <h4 class="pt-3"></h5>
+                    <ul id="list-ovh" class="list-group list-group-flush w-auto me-3">
+                        {% for key, cat in categories.iterrows() %}
+                            <a href="#list-{{ cat['category_label'] }}" class="list-group-item list-group-item-action m-0 p-1"  aria-current="true">
+                                <li class="d-flex gap-3 m-0 py-1 align-items-center">
+                                    <h6 class="mb-0 font-bold">{{ cat['category_name'] }}</h6>
+                                </li>                              
+                            </a>
+                        {% endfor %}
+                        </ul>
                 </div>
-                {% for key, product in products.iterrows() %}
-                    {% if cat['category_label'] == product['category_name'] %}
-                    <div class="grid-item col-xs-12 col-sm-4 col-md-2 p-2 m-auto product bg-{{ cat['category_label'] }} {{ product['product_type'] }} {{ product['hardware_tenancy'] }} {{ product['public_network'] }} {{ product['private_network'] }} {{ product['billing_mode'] }} {{ product['phase_name'] }}">
-                        <h6 class="product_name">{{ product['product_name'] }}</h6>
-                        <div class="product_description">
-                            {{ product['product_short_description'] }}
-                        </div>
-                        <div class="product_phase">
-                            {% for key, phase in phases.iterrows() %}
-                                {% if phase['phase_label'] == product['phase_name'] %}
-                                <span class="badge bg-border-black">{{ phase["phase_name"] }}</span>
-                                {% endif %}
-                             {% endfor %}    
-                        </div>
-                        <a class="link-dark stretched-link" data-bs-toggle="offcanvas" href="#offcanvas-{{ key }}" role="button" aria-controls="offcanvasExample">
-                            <div class="product_more">
-                                <i class="bi bi-info-square"></i> More details
+            </div>
+            <div class="col-sm-9">
+                <div class="pb-4 mb-4 border-bottom sticky-top bg-white">
+                    {% include "snippets/filters.html" %}
+                </div>
+                {% for key, cat in categories.iterrows() %}
+                    <h3 class="pt-3 border-bottom border-info" id="list-{{ cat['category_label'] }}">{{ cat['category_name'] }}</h3>
+                    <p>{{ cat['category_short_description'] }}</p>
+                    <div class="row mb-3">
+                        {% for key, product in products.iterrows() %}
+                            {% if cat['category_label'] == product['category_name'] %}
+                            <div class="col-sm-4 mb-3 d-flex align-items-stretch" >
+                                <div class="card card-ovh all border-ovh w-100 product" data-model="{{ product['product_type'] }}" data-billing="{{ product['billing_mode'] }}" data-tenancy="{{ product['hardware_tenancy'] }}" data-network="{{ product['public_network'] }}" data-phase="{{ product['phase_name'] }}" >
+                                    <div class="card-body">
+                                    <h6 class="font-bold">{{ product['product_name'] }}</h6>
+                                    <p class="card-text card-description">{{ product['product_short_description'] }}</p>
+                                    <a href="#offcanvas-{{ key }}" data-bs-toggle="offcanvas" href="#offcanvas-{{ key }}" class="card-link">
+                                        More info <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                            {% include "snippets/offcanvas.html" %}
+                            {% endif %} 
+                        {% endfor %}
                     </div>
-                    {% endif %} 
-                {% include "snippets/offcanvas.html" %}
-                {% endfor %}   
-            {% endfor %}
-        </div>
-    </div>
-
+                {% endfor %}
+            </div>       
+      </div>      
+ 
 </main>
-
 {% include "snippets/footer.html" %}
 </body>
 </html>
-
